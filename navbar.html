@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/23f12ed3cb.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        
+        <script>
+            function myfun(){
+                var active = document.querySelectorAll(".active-element");
+                for(var a=0; a<active.length; a++){
+                    active[a].classList.toggle("active");
+                }
+            };
+        </script>
+        
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <span>WELCOME!</span>
+            <div id="menu" class="active-element" onclick="myfun()">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </nav>
+        <div class="active-element list">
+            <p><a href="#">BRANDING</a></p>
+            <p><a href="#">CLOTHING</a></p>
+            <p><a href="#">ABOUT</a></p>
+            <p><a href="#">CONTACT</a></p>
+        </div>
+        <div class="left-slide active-element"></div>
+        <div class="right-slide active-element"></div>
+        <main class="main-contents active-element">
+            <h2>About</h2>
+             <p>Woot! Got the (vanilla) Javascript to work!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore cumque, laborum, dolorem dolor doloribus iste qui omnis? Consequuntur sapiente mollitia iure quas. Rem nobis tenetur, est accusamus iste dolor, necessitatibus, facilis error ratione aliquid sequi voluptates dignissimos. Quidem, quam, rem? Molestias odio, perferendis dolores doloremque eum quo mollitia atque, sit inventore nisi accusamus magnam vitae temporibus maxime et in aliquam qui aliquid obcaecati alias unde repellat laudantium quam blanditiis. Blanditiis, earum itaque veritatis et numquam culpa, tempore magnam. Quas laborum voluptate id vero. Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo reprehenderit nostrum nesciunt, deleniti facere voluptas eligendi expedita dolor at praesentium sequi. Accusamus vitae ut necessitatibus aut, repudiandae voluptate! Excepturi quam explicabo quis illo, qui a ipsam sit atque non sed doloribus maiores in quo ut voluptatem neque animi, saepe facilis nemo et! Temporibus dolores deserunt illo cum aut saepe tenetur, odit velit ipsum beatae dolore illum accusantium alias ullam quas reiciendis! Quod at tenetur sint. Dolorum officia excepturi placeat, facere enim ullam, tempora accusantium culpa voluptates iusto non aperiam beatae ut laboriosam voluptatibus eum corrupti libero, laborum voluptas quasi at fugiat et vel? Eum.</p>
+        </main>
+        
+    </body>
+</html>
